@@ -39,7 +39,7 @@ public class ScriptLapseExe {
         while (EJECUTAR) {
             while (!((System.currentTimeMillis() - time) < tEspera)) {
                 try {
-                    time = System.currentTimeMillis();
+                    
                     LOG.log(Level.INFO, "Iniciando ejecución número " + numEjecucion);
                     
                     ejecuta();
@@ -50,7 +50,8 @@ public class ScriptLapseExe {
                     LOG.log(Level.INFO, "Ejecución número " + numEjecucion + " finalizada");
 
                     numEjecucion++;
-                    Timestamp ts = new Timestamp(System.currentTimeMillis() + tEspera);
+                    time = System.currentTimeMillis();
+                    Timestamp ts = new Timestamp(time + tEspera);
                     String t = ts.toString().substring(0, 19);
                     LOG.log(Level.INFO, "Inicio de la ejecución número " + numEjecucion + ": " + t);
 
