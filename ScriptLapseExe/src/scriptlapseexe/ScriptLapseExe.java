@@ -69,17 +69,15 @@ public class ScriptLapseExe {
             Runtime runtime = Runtime.getRuntime();
 
             process = runtime.exec("./tarea.sh");
+            
+            LOG.log(Level.INFO, "Ejecutando script 'tarea.sh'... ");
 
             while (process.isAlive()) {
                 Timestamp ts = new Timestamp(System.currentTimeMillis());
                 String t = ts.toString().substring(0, 19);
-                System.out.println(t + " - ejecutando proceso...");
-                Thread.sleep(10000);
+                imprimirOutputProcess(process);
+                Thread.sleep(1000);
             }
-
-            System.out.println("");
-
-            imprimirOutputProcess(process);
 
         } catch (Exception e) {
             LOG.log(Level.SEVERE, null, e);
