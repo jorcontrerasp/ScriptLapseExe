@@ -63,6 +63,9 @@ public class ScriptLapseExe {
         }
     }
 
+    /**
+     * Método que ejecuta el script "tarea.sh"
+     */
     public static void ejecuta() {
         Process process;
         try {
@@ -84,6 +87,10 @@ public class ScriptLapseExe {
         }
     }
 
+    /**
+     * Método que imprime el InputStream y el ErrorStream del proceso p.
+     * @param p
+     */
     public static void imprimirOutputProcess(Process p) {
         try {
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
