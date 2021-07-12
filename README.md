@@ -12,4 +12,4 @@ _Programa encargado de ejecutar un script "tarea.sh" cada x tiempo_
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Apache-2.0 License) - mirar el archivo [LICENSE](https://github.com/jorcontrerasp/ScriptLapseExe/blob/main/README.md) para más detalles.
+Este proyecto está bajo la Licencia (Apache-2.0 License) - mirar el archivo [LICENSE](https://github.com/jorcontrerasp/ScriptLapseExe/blob/main/LICENSE) para más detalles.
